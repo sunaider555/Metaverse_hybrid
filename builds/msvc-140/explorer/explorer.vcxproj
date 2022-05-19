@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\metaverse\explorer\callback_state.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\command.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\commands\fetch-history.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\commands\fetch-stealth.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\commands\help.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\commands\offline_commands_impl.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\commands\send-tx.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\commands\settings.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\commands\stealth-decode.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\commands\stealth-encode.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\commands\stealth-public.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\commands\stealth-secret.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\commands\stealth-shared.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\commands\tx-decode.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\commands\validate-tx.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\address.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\algorithm.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\btc.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\byte.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\cert_key.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\ec_private.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\encoding.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\endorsement.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\hashtype.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\hd_key.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\header.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\input.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\language.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\output.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\point.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\raw.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\script.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\signature.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\transaction.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\config\wrapper.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\define.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\dispatch.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\display.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\account_info.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\base_helper.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\addnode.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\burn.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\changepasswd.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\createasset.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\createmultisigtx.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\createrawtx.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\decoderawtx.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\deleteaccount.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\deletelocalasset.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\deletemultisig.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\didchangeaddress.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getlocked.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getrandom.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\importaddress.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\lock.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\popblock.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\registerwitness.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\send.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\sendasset.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\sendassetfrom.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\sendmoreasset.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\sendfrom.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\sendmore.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\dumpkeyfile.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\fetchheaderext.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getaccount.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getaccountasset.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getassetview.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getaddressasset.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getaddressetp.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getasset.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getbalance.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getblock.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getblockheader.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getheight.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getinfo.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getmemorypool.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getmininginfo.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getstakeinfo.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getmit.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getnewaccount.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getnewaddress.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getnewmultisig.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getpeerinfo.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getpublickey.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\gettx.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getwork.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\importaccount.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\importkeyfile.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\issue.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\issuecert.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\listmits.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\registerdid.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\listaddresses.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\listassets.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\listbalances.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\getdid.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\listdids.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\listmultisig.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\listtxs.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\registermit.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\secondaryissue.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\swapmit.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\swaptoken.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\transfercert.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\sendrawtx.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\setminingaccount.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\shutdown.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\signmultisigtx.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\signrawtx.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\startmining.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\stopmining.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\submitwork.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\transfermit.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\validateaddress.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\validatesymbol.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\commands\verifyrandom.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\command_assistant.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\command_extension.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\command_extension_func.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\exception.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\extensions\node_method_wrapper.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\generated.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\json_helper.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\parser.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\utility.hpp" />
+    <ClInclude Include="..\..\..\include\metaverse\explorer\version.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\include\metaverse\explorer\impl\json_helper.ipp" />
+    <None Include="..\..\..\include\metaverse\explorer\impl\utility.ipp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\lib\explorer\callback_state.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\commands\fetch-history.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\commands\fetch-stealth.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\commands\help.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\commands\offline\stealth-decode.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\commands\offline\stealth-encode.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\commands\offline\stealth-public.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\commands\offline\stealth-secret.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\commands\offline\stealth-shared.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\commands\offline\tx-decode.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\commands\offline_commands_impl.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\commands\send-tx.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\commands\settings.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\commands\validate-tx.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\address.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\algorithm.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\btc.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\byte.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\cert_key.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\ec_private.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\encoding.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\endorsement.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\hashtype.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\hd_key.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\header.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\input.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\language.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\output.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\point.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\raw.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\script.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\signature.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\transaction.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\config\wrapper.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\dispatch.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\display.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\account_info.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\base_helper.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\addnode.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\burn.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\changepasswd.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\createasset.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\createmultisigtx.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\createrawtx.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\decoderawtx.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\deleteaccount.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\deletelocalasset.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\deletemultisig.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\didchangeaddress.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getlocked.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getrandom.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\importaddress.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\lock.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\popblock.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\registerwitness.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\send.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\sendasset.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\sendassetfrom.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\sendfrom.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\sendmore.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\dumpkeyfile.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\fetchheaderext.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getaccount.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getaccountasset.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getassetview.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getaddressasset.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getaddressetp.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getasset.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getbalance.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getblock.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getblockheader.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getheight.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getinfo.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getmemorypool.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getmininginfo.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getstakeinfo.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getmit.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getnewaccount.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getnewaddress.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getnewmultisig.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getpeerinfo.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getpublickey.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\gettx.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getwork.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\importaccount.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\importkeyfile.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\issue.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\issuecert.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\listmits.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\registerdid.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\listaddresses.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\listassets.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\listbalances.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\getdid.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\listdids.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\listmultisig.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\listtxs.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\registermit.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\secondaryissue.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\sendmoreasset.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\swapmit.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\swaptoken.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\transfercert.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\sendrawtx.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\setminingaccount.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\shutdown.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\signmultisigtx.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\signrawtx.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\startmining.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\stopmining.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\submitwork.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\transfermit.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\validateaddress.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\validatesymbol.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\commands\verifyrandom.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\command_assistant.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\command_extension_func.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\exception.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\extensions\node_method_wrapper.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\generated.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\json_helper.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\parser.cpp" />
+    <ClCompile Include="..\..\..\src\lib\explorer\utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\include\CMakeLists.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9DE1D113-1D5B-401A-A5D4-8364598ABEE6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>explorer</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>libexplorer-vc140-mt-gd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>libexplorer-vc140-mt</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;BC_STATIC;BCC_STATIC;BCX_STATIC;BCB_STATIC;BCT_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\boost_1_63_0;..\..\..\contrib;</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;BC_STATIC;BCC_STATIC;BCX_STATIC;BCB_STATIC;BCT_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\boost_1_63_0;..\..\..\contrib</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

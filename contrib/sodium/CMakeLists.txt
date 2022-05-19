@@ -1,0 +1,13 @@
+FILE(GLOB_RECURSE sodium_SOURCES "*.cpp")
+
+ADD_LIBRARY(sodium_static STATIC ${sodium_SOURCES})
+SET_TARGET_PROPERTIES(sodium_static PROPERTIES OUTPUT_NAME sodium)
+TARGET_LINK_LIBRARIES(sodium_static)
+INSTALL(TARGETS sodium_static DESTINATION lib)
+
+IF(ENABLE_SHARED_LIBS)
+    ADD_LIBRARY(sodium_shared SHARED ${sodium_SOURCES})
+    SET_TARGET_PROPERTIES(sodium_shared PROPERTIES OUTPUT_NAME sodium)
+    TARGET_LINK_LIBRARIES(sodium_shared)
+    INSTALL(TARGETS sodium_shared DESTINATION lib)
+ENDIF()
